@@ -86,3 +86,15 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+var x = 1;
+
+
+console.log("Financial Analysis")
+console.log("-----------------------")
+console.log("Total Months: ")
+console.log("Total Profit/Loss: ")
+console.log("Average Change: £")
+console.log("Greatest Increse in Profits: ")
+console.log("Greatest Decrese in Profits: ")

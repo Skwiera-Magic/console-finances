@@ -88,12 +88,21 @@ let finances = [
 ];
 
 
+//counting sum amount from the array
+let amounts = []
+
+for (let i = 0; i < finances.length; i++) {
+    amounts.push(finances[i][1])
+}
+
+let totalAmount = amounts.reduce((a, b) => a + b, 0)
 
 
 console.log("Financial Analysis")
 console.log("-----------------------")
+//simple solution to see how many entries are in database
 console.log("Total Months: "+finances.length)
-console.log("Total Profit/Loss: ")
+console.log("Total Profit/Loss: £"+totalAmount)
 console.log("Average Change: £")
 console.log("Greatest Increse in Profits: ")
 console.log("Greatest Decrese in Profits: ")

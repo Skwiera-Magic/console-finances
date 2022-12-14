@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
@@ -88,12 +88,11 @@ var finances = [
 ];
 
 
-var x = 1;
 
 
 console.log("Financial Analysis")
 console.log("-----------------------")
-console.log("Total Months: ")
+console.log("Total Months: "+finances.length)
 console.log("Total Profit/Loss: ")
 console.log("Average Change: £")
 console.log("Greatest Increse in Profits: ")

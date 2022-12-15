@@ -87,6 +87,10 @@ let finances = [
 ['Feb-2017', 671099]
 ];
 
+console.log("Financial Analysis")
+console.log("-----------------------")
+//simple solution to see how many entries are in database
+console.log("Total Months: "+finances.length)
 
 //counting sum amount from the array
 let amounts = []
@@ -96,13 +100,11 @@ for (let i = 0; i < finances.length; i++) {
 }
 
 let totalAmount = amounts.reduce((a, b) => a + b, 0)
-
-
-console.log("Financial Analysis")
-console.log("-----------------------")
-//simple solution to see how many entries are in database
-console.log("Total Months: "+finances.length)
 console.log("Total Profit/Loss: £"+totalAmount)
+
+//calculating average change over whole period
 console.log("Average Change: £")
+
+//Looking for greates increase and decrease in profits
 console.log("Greatest Increse in Profits: ")
 console.log("Greatest Decrese in Profits: ")

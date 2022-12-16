@@ -103,7 +103,9 @@ let totalAmount = amounts.reduce((a, b) => a + b, 0)
 console.log("Total Profit/Loss: £"+totalAmount)
 
 //calculating average change over whole period
-console.log("Average Change: £")
+let averageChange = amounts.reduce((a, b) => a + b, 0) / amounts.length
+averageChange = averageChange.toFixed(2)
+console.log("Average Change: £"+averageChange)
 
 //Looking for greates increase and decrease in profits
 console.log("Greatest Increse in Profits: ")

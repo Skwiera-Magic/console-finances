@@ -108,5 +108,28 @@ averageChange = averageChange.toFixed(2)
 console.log("Average Change: £"+averageChange)
 
 //Looking for greates increase and decrease in profits
-console.log("Greatest Increse in Profits: ")
-console.log("Greatest Decrese in Profits: ")
+
+
+var month = [];
+var change = [];
+var totalChange = 0;
+
+for (var i = 1; i < finances.length; i++) {
+    var difference = finances[i][1] - finances[i-1][1]
+    change.push(difference)
+    month.push([finances[i][0], difference])
+    totalChange += difference
+}
+
+
+var topChange = change.indexOf(Math.max(...change));
+tops = month[topChange];
+
+var bottomChange = change.indexOf(Math.min(...change));
+bottom = month[bottomChange];
+
+
+
+//why is it printing [object Window] when it's top ??
+console.log("Greatest Increse in Profits: "+tops)
+console.log("Greatest Decrese in Profits: "+bottom)

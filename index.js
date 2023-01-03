@@ -126,10 +126,10 @@ var topChange = change.indexOf(Math.max(...change));
 tops = month[topChange];
 
 var bottomChange = change.indexOf(Math.min(...change));
-bottom = month[bottomChange];
+lows = month[bottomChange];
 
 
 
-//why is it printing [object Window] when it's top ??
+//what are best and worst months
 console.log("Greatest Increse in Profits: "+tops)
-console.log("Greatest Decrese in Profits: "+bottom)
+console.log("Greatest Decrese in Profits: "+lows)

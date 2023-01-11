@@ -13,6 +13,7 @@
 * My first contact with javaScript.
 * Not much, I need to get a lot more knowledge before creating good stuff
 * But you can use it to check your own finances :D
+* When creating it I have learned things like .push, .reduce and few more basics of javascript
 
 ### Screenshot
 

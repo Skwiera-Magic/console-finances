@@ -95,10 +95,12 @@ console.log("Total Months: "+finances.length)
 //counting sum amount from the array
 let amounts = []
 
+// for loop that goes through finances array and pushes every number to 'amounts' array
 for (let i = 0; i < finances.length; i++) {
     amounts.push(finances[i][1])
 }
 
+// adding all number to know what the sum is
 let totalAmount = amounts.reduce((a, b) => a + b, 0)
 console.log("Total Profit/Loss: £"+totalAmount)
 
@@ -114,6 +116,9 @@ var month = [];
 var change = [];
 var totalChange = 0;
 
+
+// for loop that goes through finances, checks what is the difference between entries and pushes difference to array
+// also adds all diferences to totalChange to see how much everything changed
 for (var i = 1; i < finances.length; i++) {
     var difference = finances[i][1] - finances[i-1][1]
     change.push(difference)
